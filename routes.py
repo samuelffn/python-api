@@ -36,4 +36,4 @@ def geraResponse(status, mensagem, nome_do_conteudo=False, conteudo=False):
 
     return response
 
-app.run(host="0.0.0.0", port= 2000, debug= False)
+app.run(host="0.0.0.0", debug= False)
