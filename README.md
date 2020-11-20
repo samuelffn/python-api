@@ -1,3 +1,3 @@
 # python-api
 
-Criação de API básica para estudo de  python.  
+Criação de API básica com Flask para estudo de Python.  
