@@ -1,5 +1,4 @@
 # python-api
-
 Criação de API básica com Flask para estudo de Python.  
 
 ## Versões
@@ -12,9 +11,19 @@ Sobre as versões 2 e 3 do Python: https://python.org.br/qual-python/
 ## Execução
 1- No terminal acessa o diretório do projeto  
 2- Utiliza o comando **python3 api.py**  
-3- Abra o navegador para testar a rota padrão: http://localhost:2000/  
-4- Teste a outra rota utilizando parâmetro: http://localhost:2000/rota-nome/Samuel  
 
+## Fazendo requisições
+Utilizar qualquer aplicativo para testar as requisições: Insomnia ou Postman, por exemplo  
+- Rota GET:  
+URL: http://localhost:2000/olamundo  
+  
+- Rota POST:  
+URL: http://localhost:2000/cadastra/usuario  
+Json: {  
+	    "nome": "Teste",  
+	    "email": "teste@teste.com.br",  
+	    "senha": "123"  
+      }  
 
 
 
