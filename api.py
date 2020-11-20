@@ -13,4 +13,7 @@ def rota(nome):
     return "Meu nome é " + nome
 
 app.run(host="0.0.0.0", port= 2000, debug= False)
+# host="0.0.0.0" permite que outra máquina ou dispositivo acesse a aplicação, sem ser localhost
+# port= 2000 é a porta onde a aplicação vai rodar
+# debug= False para não seja feito debug
 
