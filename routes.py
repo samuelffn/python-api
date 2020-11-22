@@ -41,7 +41,7 @@ def geraResponse(status, mensagem, nome_do_conteudo=False, conteudo=False):
 def calculatesBestRoute():
 
     body = request.get_json()
-    return bestRoute(body["nome"], body["long"])
+    return bestRoute(body["lat"], body["long"])
 
 
 app.run(host="0.0.0.0", debug= False)
