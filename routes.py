@@ -1,6 +1,5 @@
 from flask import Flask, request
 from usuario_controller import insertUsuario
-from index import bestRoute
 
 app = Flask("python-api")
 
@@ -36,12 +35,5 @@ def geraResponse(status, mensagem, nome_do_conteudo=False, conteudo=False):
         response[nome_do_conteudo] = conteudo
 
     return response
-
-@app.route("/bestRoute", methods=["POST"])
-def calculatesBestRoute():
-
-    body = request.get_json()
-    return bestRoute(body["nome"], body["long"])
-
 
 app.run(host="0.0.0.0", debug= False)
