@@ -8,9 +8,13 @@ app = Flask(__name__)
 def home():
     return "Hello World!"
 
-@app.route("/rota-nome/<nome>")
+@app.route("/rota-nome/<nome>") # GET
 def rota(nome):
     return "Meu nome é " + nome
+
+@app.route("/rota-nome-sobrenome/<nome>, <sobrenome>") # Testar se está correto
+def rota(nome):
+    return "Meu nome é " + nome + sobrenome
 
 app.run(host="0.0.0.0", port= 2000, debug= False)
 ## Informações sobre os parâmetros utilizados:
@@ -24,3 +28,5 @@ app.run(host="0.0.0.0", port= 2000, debug= False)
 # 2- Utiliza o comando **python3 api.py**  
 # 3- Abra o navegador para testar a rota padrão: http://localhost:2000/  
 # 4- Teste a outra rota utilizando parâmetro: http://localhost:2000/rota-nome/Samuel
+
+
